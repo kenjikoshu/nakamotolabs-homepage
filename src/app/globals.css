@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Noto Serif TC';
+  src: url('/fonts/NotoSerifTC-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Serif TC';
+  src: url('/fonts/NotoSerifTC-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Serif TC';
+  src: url('/fonts/NotoSerifTC-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto Sans TC';
+  src: url('/fonts/NotoSansTC-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('/fonts/OpenSans-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lora';
+  src: url('/fonts/Lora-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 1rem;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background-color: black;
+  font-family: 'Noto Serif TC', serif;
+}
+
+.bg-whitepaper {
+  background-image: url('/WhitepaperBg.jpg');
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center;
+  background-blend-mode: normal;
+}
+
+.section-title {
+  font-family: 'Noto Serif TC', serif;
+  font-weight: 600;
+  color: white;
+}
+
+.item-title {
+  font-family: 'Noto Serif TC', serif;
+  font-weight: 500;
+  color: white;
+}
+
+.item-subtitle {
+  font-family: 'Noto Serif TC', serif;
+  font-weight: 400;
+  color: white;
+}
+
+.item-description {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 300;
+  color: white;
+}
+
+.satoshis-forex-title {
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  color: #FF6600;
+}
+
+.satoshis-forex-description {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: white;
+}
+
+.mission-statement {
+  font-family: 'Noto Serif TC', serif;
+  font-weight: 500;
+  color: white;
+}
+
+.float-animation {
+  transition: transform 0.3s ease;
+}
+
+.float-animation:hover {
+  transform: translateY(-5px);
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+}
+
+.hero-divider {
+  width: 100%;
+  max-width: 100px;
+  height: 1px;
+  background-color: white;
+  opacity: 0.7;
+  margin: 2rem 0;
+} 
