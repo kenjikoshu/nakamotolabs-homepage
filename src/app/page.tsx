@@ -14,6 +14,7 @@ export default function Home() {
                 width={240}
                 height={200}
                 priority
+                className="floaty-shadow"
               />
               <div className="flex flex-col h-12 items-center justify-center">
                 <Image 
@@ -36,14 +37,14 @@ export default function Home() {
 
       {/* Research Section */}
       <section className="w-full max-w-6xl mx-auto pt-20 pb-16 px-4" id="research">
-        <h2 className="section-title text-3xl md:text-4xl mb-10 text-right">研究</h2>
+        <h2 className="section-title text-3xl md:text-4xl mb-10 text-right floaty-shadow">研究</h2>
         
         <div className="space-y-12">
           {/* YouTube Channel */}
           <Link href="https://youtube.com" target="_blank" rel="noopener noreferrer">
             <div className="flex gap-6 items-center hover:opacity-90 transition-opacity">
               <div className="flex-shrink-0">
-                <div className="rounded-full overflow-hidden bg-white p-1">
+                <div className="rounded-full overflow-hidden bg-white p-1 floaty-shadow">
                   <Image 
                     src="/icons/TubeIcon.svg" 
                     alt="YouTube Channel" 
@@ -68,7 +69,7 @@ export default function Home() {
           {/* Analyst Profile */}
           <div className="flex gap-6 items-start">
             <div className="flex-shrink-0">
-              <div className="rounded-full overflow-hidden bg-white p-1">
+              <div className="rounded-full overflow-hidden bg-white p-1 floaty-shadow">
                 <Image 
                   src="/icons/KenjiAvatar.svg" 
                   alt="Kenji" 
@@ -114,7 +115,7 @@ export default function Home() {
           <Link href="/journals" className="block">
             <div className="flex gap-6 items-center hover:opacity-90 transition-opacity">
               <div className="flex-shrink-0">
-                <div className="rounded-full overflow-hidden bg-white p-1">
+                <div className="rounded-full overflow-hidden bg-white p-1 floaty-shadow">
                   <Image 
                     src="/icons/JournalIcon.svg" 
                     alt="Research Journals" 
@@ -140,14 +141,14 @@ export default function Home() {
 
       {/* Experiment Section */}
       <section className="w-full max-w-6xl mx-auto pt-12 pb-24 px-4" id="experiment">
-        <h2 className="section-title text-3xl md:text-4xl mb-10 text-right">實驗</h2>
+        <h2 className="section-title text-3xl md:text-4xl mb-10 text-right floaty-shadow">實驗</h2>
         
         <div className="space-y-8">
           {/* Satoshis.forex */}
           <Link href="https://satoshis.forex" target="_blank" rel="noopener noreferrer">
             <div className="flex gap-6 items-start hover:opacity-90 transition-opacity">
               <div className="flex-shrink-0">
-                <div className="rounded-full overflow-hidden bg-[#FF6600] bg-opacity-20 p-1">
+                <div className="rounded-full overflow-hidden bg-white p-1 floaty-shadow">
                   <Image 
                     src="/icons/SatoshisForexIcon.svg" 
                     alt="Satoshis.forex" 
