@@ -4,6 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "中本研究所 | Nakamoto Labs",
   description: "Bitcoin research and education for the Chinese-speaking community",
+  metadataBase: new URL("https://nakamotolabs.org"),
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
