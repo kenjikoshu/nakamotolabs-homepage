@@ -8,14 +8,13 @@ export default function Home() {
       {/* Hero Section */}
       <section className="hero-section w-full flex flex-col items-center justify-center" id="hero">
             <div className="flex flex-col items-center justify-center">
-              <div className="w-full relative pt-[50%] md:pt-[70%]lg:pt-[90%]">
-                <Image
-                  src="/icons/NakamotoLogo.svg"
-                  alt="中本研究所"
-                  fill
-                  priority
-                />
-              </div>
+              <Image
+                src="/icons/NakamotoLogo.svg"
+                alt="中本研究所"
+                width={240}
+                height={200}
+                priority
+              />
               <div className="flex flex-col h-12 items-center justify-center">
                 <Image 
                     src="/icons/Line.svg" 
@@ -56,9 +55,9 @@ export default function Home() {
               </div>
               <div className="flex-grow bg-[#333333] bg-opacity-70 p-4">
                 <div className="flex justify-between items-center">
-                  <div>
+                  <div className="flex flex-col md:flex-row items-start md:items-center">
                     <span className="item-title text-xl">中本研究所</span>
-                    <span className="item-subtitle text-xl mx-2">|</span>
+                    <span className="item-subtitle text-xl mx-2 hidden md:inline">|</span>
                     <span className="item-subtitle text-lg">Youtube 頻道</span>
                   </div>
                 </div>
@@ -81,9 +80,9 @@ export default function Home() {
             </div>
             <div className="flex-grow bg-[#333333] bg-opacity-70 p-4">
               <div className="flex justify-between items-center">
-                <div>
+                <div className="flex flex-col md:flex-row items-start md:items-center">
                   <span className="item-title text-xl">謙持小集</span>
-                  <span className="item-subtitle text-xl mx-2">|</span>
+                  <span className="item-subtitle text-xl mx-2 hidden md:inline">|</span>
                   <span className="item-subtitle text-lg">資深分析師</span>
                 </div>
                 <div className="flex space-x-3">
@@ -127,9 +126,9 @@ export default function Home() {
               </div>
               <div className="flex-grow bg-[#333333] bg-opacity-70 p-4">
                 <div className="flex justify-between items-center">
-                  <div>
+                  <div className="flex flex-col md:flex-row items-start md:items-center">
                     <span className="item-title text-xl">研究文章</span>
-                    <span className="item-subtitle text-xl mx-2">|</span>
+                    <span className="item-subtitle text-xl mx-2 hidden md:inline">|</span>
                     <span className="item-subtitle text-lg">Research Journals</span>
                   </div>
                 </div>
@@ -159,9 +158,9 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex-grow bg-[#333333] bg-opacity-70 p-4">
-                <div>
+                <div className="flex flex-col md:flex-row items-start md:items-center">
                   <span className="satoshis-forex-title text-xl">satoshis.forex</span>
-                  <span className="item-subtitle text-xl mx-2">|</span>
+                  <span className="item-subtitle text-xl mx-2 hidden md:inline">|</span>
                   <span className="item-subtitle text-lg">聰本位匯率網站</span>
                 </div>
                 <p className="satoshis-forex-description mt-3 text-base">
