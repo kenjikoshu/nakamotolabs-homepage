@@ -4,24 +4,34 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="flex flex-col items-center min-h-screen">
+
       {/* Hero Section */}
-      <section className="hero-section w-full px-4" id="hero">
-        <div className="flex flex-col items-center justify-center space-y-8 max-w-3xl mx-auto">
-          <Image
-            src="/icons/NakamotoLogo.svg"
-            alt="中本研究所"
-            width={300}
-            height={150}
-            priority
-            className="mb-6"
-          />
-          <div className="w-full max-w-md mx-auto border-b border-gray-400 opacity-70 mb-4"></div>
-          <div className="bg-[#333333] bg-opacity-70 p-5 max-w-3xl text-center">
-            <p className="mission-statement text-xl md:text-2xl leading-relaxed">
-              透過第一性原理分析與逆向思維 深入探索比特幣的技術, 經濟原理, 以及它對現實及未來世界的潛在影響
-            </p>
-          </div>
-        </div>
+      <section className="hero-section w-full flex flex-col items-center justify-center" id="hero">
+            <div className="flex flex-col items-center justify-center">
+              <Image
+                src="/icons/NakamotoLogo.svg"
+                alt="中本研究所"
+                width={320}
+                height={300}
+                priority
+              />
+              <div className="flex flex-col h-12 items-center justify-center">
+                <Image 
+                    src="/icons/Line.svg" 
+                    alt="Line" 
+                    width={360} 
+                    height={1}
+                    priority
+                  />
+              </div>
+              <div className="relative flex flex-col items-center justify-center">
+                <div className="mission-bg">
+                  <p className="mission-statement text-xl">
+                    透過第一性原理分析與逆向思維 <br/> 深入探索比特幣的技術, 經濟原理, <br/>以及它對現實及未來世界的潛在影響
+                  </p>
+                </div>
+              </div>
+            </div>
       </section>
 
       {/* Research Section */}
