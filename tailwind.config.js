@@ -6,6 +6,10 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      'md': '480px',
+      'lg': '760px',
+    },
     extend: {
       fontFamily: {
         'noto-serif': ['"Noto Serif TC"', 'serif'],

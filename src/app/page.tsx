@@ -8,13 +8,14 @@ export default function Home() {
       {/* Hero Section */}
       <section className="hero-section w-full flex flex-col items-center justify-center" id="hero">
             <div className="flex flex-col items-center justify-center">
-              <Image
-                src="/icons/NakamotoLogo.svg"
-                alt="中本研究所"
-                width={320}
-                height={300}
-                priority
-              />
+              <div className="w-full relative pt-[50%] md:pt-[70%]lg:pt-[90%]">
+                <Image
+                  src="/icons/NakamotoLogo.svg"
+                  alt="中本研究所"
+                  fill
+                  priority
+                />
+              </div>
               <div className="flex flex-col h-12 items-center justify-center">
                 <Image 
                     src="/icons/Line.svg" 
