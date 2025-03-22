@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "中本研究所 | Nakamoto Labs",
   description: "Bitcoin research and education for the Chinese-speaking community",
-  metadataBase: new URL("https://nakamotolabs.org"),
+  metadataBase: new URL("https://nakamotolabs.io"),
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "中本研究所 | Nakamoto Labs",
     description: "Bitcoin research and education for the Chinese-speaking community",
-    url: "https://nakamotolabs.org",
+    url: "https://nakamotolabs.io",
     siteName: "Nakamoto Labs",
     images: [
       {
