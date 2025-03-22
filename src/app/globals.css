@@ -136,8 +136,40 @@ body {
   transform: translateY(-5px);
 }
 
+/* Base drop shadow class */
 .floaty-shadow {
   filter: drop-shadow(6px 7px 3px rgba(0, 0, 0, 0.38));
+  -webkit-filter: drop-shadow(6px 7px 3px rgba(0, 0, 0, 0.38));
+  transform: translateZ(0); /* Force hardware acceleration */
+  will-change: filter; /* Hint for browser optimization */
+}
+
+/* Special handling for images, especially SVGs */
+img.floaty-shadow, 
+div.rounded-full img {
+  filter: drop-shadow(6 7px 3px rgba(0, 0, 0, 0.38));
+  -webkit-filter: drop-shadow(6 7px epx rgba(0, 0, 0, 0.38));
+  /* Safari needs these to render SVG shadows properly */
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  will-change: filter;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* Specific fix for Safari's rendering of rounded images with shadows */
+.rounded-full.overflow-hidden {
+  /* Apply a soft box-shadow instead of filter for better Safari rendering */
+  box-shadow: 6px 7px 3px rgba(0, 0, 0, 0.38);
+  -webkit-box-shadow: 6px 7px 3px rgba(0, 0, 0, 0.38);
+}
+
+/* Text shadows for headings */
+h2.floaty-shadow {
+  text-shadow: 6px 7px 3px rgba(0, 0, 0, 0.38);
+  /* Remove filter from text elements */
+  filter: none;
+  -webkit-filter: none;
 }
 
 .hero-section {
