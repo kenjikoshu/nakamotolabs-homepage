@@ -108,7 +108,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="item-description mt-3 text-base">
-                曾任職於矽谷與紐約的軟件工程師。20 年獨立投資經驗 - 2011 年重注於 $AAPL、2015 年 $TSLA、2018 年 $BTC、2024 年 $MSTR。現透過中本研究所，專注於向中文圈推廣比特幣與投理念
+                曾任職於矽谷與紐約的軟件工程師。20 年獨立投資經驗 - 2011 年重注於 $AAPL、2015 年 $TSLA、2018 年 $BTC、2024 年 $MSTR。現透過中本研究所，專注於向中文圈推廣比特幣與投資理念
               </p>
             </div>
           </div>
