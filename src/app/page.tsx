@@ -41,7 +41,7 @@ export default function Home() {
         
         <div className="space-y-12">
           {/* YouTube Channel */}
-          <Link href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+          <Link href="https://www.youtube.com/@NakamotoLabs" target="_blank" rel="noopener noreferrer">
             <div className="flex gap-6 items-center hover:opacity-90 transition-opacity">
               <div className="flex-shrink-0">
                 <div className="rounded-full overflow-hidden bg-white p-1 floaty-shadow">
@@ -87,7 +87,7 @@ export default function Home() {
                   <span className="item-subtitle text-lg">資深分析師</span>
                 </div>
                 <div className="flex space-x-3">
-                  <Link href="https://x.com" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://x.com/KenjiKoshu/" target="_blank" rel="noopener noreferrer">
                     <Image 
                       src="/icons/xLogo.svg" 
                       alt="X" 
@@ -95,7 +95,7 @@ export default function Home() {
                       height={24}
                     />
                   </Link>
-                  <Link href="https://threads.net" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://www.threads.net/@kenjikoshu" target="_blank" rel="noopener noreferrer">
                     <Image 
                       src="/icons/ThreadsLogo.svg" 
                       alt="Threads" 
@@ -112,7 +112,7 @@ export default function Home() {
           </div>
 
           {/* Research Journal */}
-          <Link href="/journals" className="block">
+          <Link href="https://x.com/KenjiKoshu/articles" target="_blank" rel="noopener noreferrer" className="block">
             <div className="flex gap-6 items-center hover:opacity-90 transition-opacity">
               <div className="flex-shrink-0">
                 <div className="rounded-full overflow-hidden bg-white p-1 floaty-shadow">
@@ -174,27 +174,17 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="w-full py-4 px-4 bg-black bg-opacity-80">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
-          <p className="text-sm mb-3 md:mb-0">© 2025 中本研究所 ｜ Nakamoto Labs |</p>
-          <div className="flex space-x-4">
-            <Link href="https://x.com" target="_blank" rel="noopener noreferrer">
-              <Image 
-                src="/icons/xLogo.svg" 
-                alt="X" 
-                width={20} 
-                height={20}
-              />
-            </Link>
-            <Link href="https://threads.net" target="_blank" rel="noopener noreferrer">
-              <Image 
-                src="/icons/ThreadsLogo.svg" 
-                alt="Threads" 
-                width={20} 
-                height={20}
-              />
-            </Link>
-          </div>
+      <footer className="w-full py-4 px-4 bg-transparent">
+        <div className="max-w-6xl mx-auto flex flex-row justify-center items-center space-x-3">
+          <p className="text-sm">© 2025 中本研究所 ｜ Nakamoto Labs |</p>
+          <Link href="https://x.com/zhbitcoin" target="_blank" rel="noopener noreferrer">
+            <Image 
+              src="/icons/xLogo.svg" 
+              alt="X" 
+              width={20} 
+              height={20}
+            />
+          </Link>
         </div>
       </footer>
     </main>
